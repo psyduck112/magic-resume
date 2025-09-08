@@ -36,6 +36,7 @@ const SectionTitle = ({ type, title, globalSettings, showTitle = true }: Section
       fontWeight: "bold",
       color: themeColor,
       marginBottom: `${globalSettings?.paragraphSpacing}px`,
+      whiteSpace: 'nowrap',// <-- 就是添加这一行
     }),
     [
       globalSettings?.headerSize,
