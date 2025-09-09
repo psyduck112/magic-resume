@@ -22,11 +22,14 @@ const ProjectItem = React.forwardRef<HTMLDivElement, ProjectItemProps>(
         }}
       >
         <motion.div
-          className={`grid grid-cols-3 gap-2 items-center justify-items-start [&>*:last-child]:justify-self-end`}
+          className={`grid gap-2 items-center justify-items-start [&>*:last-child]:justify-self-end`}
+          style={{
+            gridTemplateColumns: 'minmax(0, 1fr) auto auto',
+          }}
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 min-w-0">
             <h3
-              className="font-bold"
+              className="font-bold truncate"
               style={{
                 fontSize: `${globalSettings?.subheaderSize || 16}px`,
               }}

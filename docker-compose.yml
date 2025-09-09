@@ -1,11 +1,11 @@
-
 services:
   web:
     build:
       context: .
       dockerfile: Dockerfile
+    platform: linux/amd64
     ports:
-      - "3000:3000"
+      - "6969:3000"
     environment:
       - NODE_ENV=production
     restart: always

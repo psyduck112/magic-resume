@@ -1,4 +1,4 @@
-# syntax=docker.io/docker/dockerfile:1
+## syntax=docker.io/docker/dockerfile:1
 
 FROM node:20-alpine AS base
 ENV PNPM_HOME="/pnpm"
